@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Layout</title>
+
+<style>
+
+    .main-box{
+        width:80%;
+        background:white;
+        padding:20px;
+        display:grid;
+        grid-template-columns: 200px 1fr;
+        gap:20px;
+    }
+
+    .top-bar{
+        grid-column:1 / span 9;
+        display:grid;
+        grid-template-columns: 1fr repeat(4,50px);
+        align-items:center;
+        gap:15px;
+    }
+
+    .logo{
+        font-size:30px;
+        font-weight:bold;
+        color:black;
+    }
+
+    .icon{
+        border:1px solid #444;
+        text-align:center;
+        
+    }
+
+    
+    .content{
+        padding:10px;
+        text-align: center;
+    }
+
+    .gallery{
+        display:none;
+    }
+
+    #gallery:target{
+        display:block;
+    }
+
+    .gallery-grid{
+        display:grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap:10px;
+    }
+
+    .box{
+        height:100px;
+        border:1px solid #8abfff;
+    }
+    footer{
+        grid-column:1 / span 2;
+        text-align:center;
+        
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="main-box">
+
+    <div class="top-bar">
+        <div class="logo">Logo</div>
+        <div class="icon">H</div>
+        <div class="icon">S</div>
+        <div class="icon">G</div>
+        <div class="icon">C</div>
+    </div>
+
+    <div class="menu">
+        <nav>
+            <ul>
+            <li><a href="#home">Home</a></li><br>
+            <li><a href="#service">Services</a></li><br>
+            <li><a href="#gallery">Gallery</a></li><br>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+    </div>
+    
+    <div class="content">
+
+        <h2>Heading</h2>
+        <p>
+            My name is Ankush kAshyap. I am from Najibabad, Uttarpradesh.
+            I have done my graduation from Chandigarh University.now i persuing MCA.
+        </p>
+
+        <div id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <footer><hr>
+        <b><p>© 2025 Anksuh Kashyap. All Rights Reserved.</p></b><hr>
+        
+    </footer>
+
+</div>
+
+</body>
+</html>

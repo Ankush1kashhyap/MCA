@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            width: 400px;
+            height: 300px;
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+                "I1 I1 I2 I3"
+                "I1 I1 I2 I7"
+                "I5 I6 I4 I7";
+            background-color: white;
+        }
+
+        .item1 {
+            grid-area: I1;
+        }
+
+        .item2 {
+            grid-area: I2;
+        }
+
+        .item3 {
+            grid-area: I3;
+        }
+
+        .item4 {
+            grid-area: I4;
+        }
+
+        .item5 {
+            grid-area: I5;
+        }
+
+        .item6 {
+            grid-area: I6;
+        }
+
+        .item7 {
+            grid-area: I7;
+        }
+
+        .grid_image {
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+            width: 100%;
+            height: 100%;
+        }
+
+        .grid_image:hover {
+            transform: scale(1.04);
+            transition: 0.3s ease-in-out;
+            overflow: hidden;
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="item1 hide">
+            <img class="grid_image" src="Assets/grid_image1.png" alt="iamge">
+        </div>
+        <div class="item2 hide">
+            <img class="grid_image" src="Assets/grid_image2.png" alt="iamge">
+        </div>
+        <div class="item3 hide">
+            <img class="grid_image" src="Assets/grid_image3.png" alt="iamge">
+        </div>
+        <div class="item4 hide">
+            <img class="grid_image" src="Assets/grid_image4.png" alt="iamge">
+        </div>
+        <div class="item5 hide">
+            <img class="grid_image" src="Assets/grid_image5.png" alt="iamge">
+        </div>
+        <div class="item6 hide">
+            <img class="grid_image" src="Assets/grid_image6.png" alt="iamge">
+        </div>
+        <div class="item7 hide">
+            <img class="grid_image" src="Assets/grid_image7.png" alt="iamge">
+        </div>
+    </div>
+</body>
+
+</html>
